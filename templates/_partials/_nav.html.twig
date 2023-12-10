@@ -1,0 +1,56 @@
+{#<nav class="navbar navbar-expand-lg navbar-dark navbar-color">#}
+{#    <div class="container-fluid">#}
+{#        <a class="navbar-brand overwatch-text" href="{{ path('app_home') }}">OTHERWATCH</a>#}
+{#        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">#}
+{#            <span class="navbar-toggler-icon"></span>#}
+{#        </button>#}
+{#        <div class="collapse navbar-collapse" id="navbarSupportedContent">#}
+{#            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" aria-current="page" href="{{ path('app_home') }}">Héros</a>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                    <a class="nav-link" href="{{ path('app_team') }}">Compositions</a>#}
+{#                </li>#}
+{#                {% if is_granted('ISADMIN', app.user)  %}#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="{{ path('app_admin') }}">Accès à Blackwatch</a>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="{{ path('app_profile') }}">#}
+{#                            {% if app.user.profilesPictures.name is defined %}#}
+{#                                <img class="rounded" src="{{asset('/uploads/profilePicture/'~ app.user.profilesPictures.name)}}" height="25" alt="Card image cap">#}
+{#                            {% endif %}#}
+{#                            {{ app.user.username }}#}
+{#                        </a>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="{{ path('app_logout') }}">Se déconnecter</a>#}
+{#                    </li>#}
+{#                {% elseif is_granted('ISUSER', app.user) %}#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="{{ path('app_create_ticket') }}">Soumettre un ticket</a>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="{{ path('app_profile') }}">#}
+{#                            {% if app.user.profilesPictures.name is defined %}#}
+{#                                <img class="rounded" src="{{asset('/uploads/profilePicture/'~ app.user.profilesPictures.name)}}" height="25" alt="Card image cap">#}
+{#                            {% endif %}#}
+{#                            {{ app.user.username }}#}
+{#                        </a>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="{{ path('app_logout') }}">Se déconnecter</a>#}
+{#                    </li>#}
+{#                {% else %}#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="{{ path('app_login') }}">Se connecter</a>#}
+{#                    </li>#}
+{#                    <li class="nav-item">#}
+{#                        <a class="nav-link" href="{{ path('app_create_user') }}">S'inscrire</a>#}
+{#                    </li>#}
+{#                {% endif %}#}
+{#                </li>#}
+{#            </ul>#}
+{#        </div>#}
+{#    </div></nav>#}
